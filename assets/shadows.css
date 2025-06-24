@@ -1,0 +1,108 @@
+
+.drop-shadow-crown {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+
+.drop-shadow-diamond {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+.drop-shadow-bughunter {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+
+.drop-shadow-discord {
+    filter: drop-shadow(0px 0px 3px rgba(211, 212, 212, 0.5));
+}
+
+.drop-shadow-github {
+    filter: drop-shadow(0 0 3px rgba(50, 51, 49, 0.35));
+}
+
+.drop-shadow-instagram {
+    filter: drop-shadow(0 0 3px rgba(225, 48, 108, .5));
+}
+
+.drop-shadow-spotify {
+    filter: drop-shadow(0 0 3px rgba(30, 215, 96, .5));
+}
+
+.drop-shadow-telegram {
+    filter: drop-shadow(0 0 3px rgba(0, 136, 204, .5));
+}
+
+.drop-shadow-tiktok {
+    filter: drop-shadow(0 0 3px rgba(211, 212, 212, 0.5));
+}
+
+.drop-shadow-twitter {
+    filter: drop-shadow(0 0 3px rgba(211, 212, 212, 0.5));
+}
+.drop-shadow-youtube {
+    filter: drop-shadow(0 0 3px rgba(211, 212, 212, 0.5));
+}
+
+
+
+
+
+.drop-shadow-breadcrumb,.drop-shadow-3xl {
+    filter: drop-shadow(0 0 10px #a9a9a9);
+}
+
+.drop-shadow-crunchyroll {
+    filter: drop-shadow(0 0 3px rgba(244, 117, 33, .5));
+}
+
+
+.drop-shadow-leagueoflegends {
+    filter: drop-shadow(0 0 3px rgba(211, 212, 212, 0.5));
+}
+
+.drop-shadow-onlyfans {
+    filter: drop-shadow(0 0 3px rgba(0, 175, 240, .5));
+}
+
+.drop-shadow-osu {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+
+.drop-shadow-pinterest {
+    filter: drop-shadow(0 0 3px rgba(230, 0, 35, .5));
+}
+.drop-shadow-reddit {
+    filter: drop-shadow(0 0 3px rgba(255, 86, 0, .5));
+}
+
+.drop-shadow-snapchat {
+    filter: drop-shadow(0 0 3px rgba(255, 252, 0, .5));
+}
+
+.drop-shadow-soundcloud {
+    filter: drop-shadow(0 0 3px rgba(255, 136, 0, .5));
+}
+.drop-shadow-steam {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+.drop-shadow-tumblr {
+    filter: drop-shadow(0 0 3px rgba(52, 82, 111, .5));
+}
+
+.drop-shadow-valorant {
+    filter: drop-shadow(0 0 3px rgba(250, 68, 84, .5));
+}
+
+.drop-shadow-website {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+
+.drop-shadow-email {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, .35));
+}
+
+.drop-shadow-facebook {
+    filter: drop-shadow(0 0 3px rgba(1, 101, 225, .5));
+}
+
+.drop-shadow-twitch {
+    filter: drop-shadow(0 0 3px rgba(100, 65, 165, .5));
+}

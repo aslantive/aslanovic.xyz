@@ -1,0 +1,141 @@
+.card {
+    margin-bottom: 10rem;
+}
+
+.card-content {
+    margin-top: -5.5rem;
+    padding-top: 5.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #141417;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;
+    -moz-box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;
+}
+
+.card-name {
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+.card-name-title {
+    background-image: url("/purple.gif");
+    filter: drop-shadow(8px 8px 10px #ffffff);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.card-badge {
+    width: 1.0em;
+    height: 1.0rem;
+}
+
+.card-bio {
+    color: #ffffff;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-family: sans-serif;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: -0.7rem;
+}
+
+.card-links {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+
+    border-radius: 10px;
+    box-shadow: 0 0px 30px #0a0a0a;
+    -webkit-box-shadow: 0 0px 30px #0a0a0a; 
+    -moz-box-shadow: 0 0px 30px #0a0a0a;
+
+    backdrop-filter: blur(55px);
+
+    background: #141417;
+
+}
+.card-link {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.card {
+    min-width: 80%;
+}
+
+.avatar {
+    width: 9.5rem;
+    height: 9.5rem;
+    object-fit: cover;
+    border-radius: 50%; /* Gebruik percentage voor een perfecte cirkel */
+    margin: 0 auto; /* Kortere notatie voor margin */
+    display: block;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8)); /* rgba-waarde iets verkort */
+    vertical-align: middle; /* Blijft behouden, maar is alleen nodig voor inline of inline-block elementen */
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+        min-width: 80%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card {
+        min-width: 70%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card {
+        min-width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card {
+        min-width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card {
+        min-width: 40%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card {
+        min-width: 28%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2000px) {
+    .card {
+        min-width: 20%;
+    }
+}
