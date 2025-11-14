@@ -2,69 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="./assets/style.css" rel="stylesheet">
     <link href="./assets/shadows.css" rel="stylesheet">
     <link href="./assets/card.css" rel="stylesheet">
     <link href="./assets/typewriter.css" rel="stylesheet">
+    <link href="./assets/volume.css" rel="stylesheet">
     <script src="./assets/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./assets/fairydust.js"></script>
+    <script src="./assets/nameflicker.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="./favicon.png">
     <title>Aslantive</title>
 </head>
 
 <body>
-    <div id="loader" class="animate__animated animate__fadeIn">
-        <p id="loadingtext" class="animate__animated">[Click Anywhere]</p>
+<div id="loader" class="animate__animated animate__fadeIn">
+    <p id="loadingtext" class="animate__animated">[Click Anywhere]</p>
+</div>
+
+<div id="pagecontent" class="animate__animated" style="display: none;">
+
+    <div id="volume-button" class="volume">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+             class="size-6 iconify iconify--mage" width="1em" height="1em" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                <path stroke-linejoin="round"
+                      d="M3 14.088V9.912c0-.416.142-.814.395-1.108c.254-.293.597-.458.955-.458h1.89c.237-.001.47-.073.675-.21l3.97-2.63c.204-.135.436-.205.672-.204s.467.074.67.212c.205.137.374.334.492.57c.118.237.18.506.181.78v10.273c0 .273-.063.542-.181.778a1.5 1.5 0 0 1-.491.571c-.204.137-.435.21-.671.212a1.2 1.2 0 0 1-.673-.204l-3.969-2.631a1.23 1.23 0 0 0-.675-.209H4.35c-.358 0-.701-.165-.955-.459A1.7 1.7 0 0 1 3 14.089"></path>
+                <path stroke-miterlimit="10"
+                      d="M16.228 15.715a5.344 5.344 0 0 0 0-7.559m2.267 9.884a8.55 8.55 0 0 0 0-12.093"></path>
+            </g>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+             class="size-6 iconify iconify--mage" width="1em" height="1em" viewBox="0 0 24 24"
+             style="display: none;">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                <path stroke-miterlimit="10" d="m20.951 9.554l-4.902 4.902m0-4.902l4.902 4.902"></path>
+                <path stroke-linejoin="round"
+                      d="M3.049 14.088V9.912c0-.416.142-.814.395-1.108c.253-.293.597-.458.955-.458h1.89c.236-.001.469-.073.675-.21l3.969-2.63c.205-.135.437-.205.672-.204s.467.074.671.212c.204.137.374.334.492.57c.118.237.18.506.18.78v10.273c0 .273-.062.542-.18.778a1.5 1.5 0 0 1-.492.571c-.203.137-.435.21-.67.212a1.2 1.2 0 0 1-.673-.204l-3.97-2.631a1.23 1.23 0 0 0-.674-.209h-1.89c-.358 0-.702-.165-.955-.459a1.7 1.7 0 0 1-.395-1.107"></path>
+            </g>
+        </svg>
     </div>
+    <div id="card" class="card animate__animated">
+        <div class="card-avatar">
+            <img draggable="false" class="avatar" alt="Avatar" src="/assets/icons/avatar.jpeg"/>
+        </div>
+        <div class="card-content">
+            <div class="card-name">
+                <h2 class="card-name-title">aslan</h2>
+<!--                &lt;!&ndash;              <img class="card-badge drop-shadow-crown" src="./assets/icons/moon.png" /> &ndash;&gt;-->
+<!--                <img class="card-badge drop-shadow-diamond" src="/assets/icons/lightning.png"/>-->
+<!--                &lt;!&ndash; <img class="card-badge drop-shadow-bughunter" src="./assets/icons/partner denk ik.png" /> &ndash;&gt;-->
 
-    <div id="pagecontent" class="animate__animated" style="display: none;">
-        <div id="card" class="card animate__animated">
-            <div class="card-avatar">
-                <img draggable="false" class="avatar" alt="Avatar" src="/assets/icons/avatar.jpeg" />
             </div>
-            <div class="card-content">
-                <div class="card-name">
-                    <h2 class="card-name-title">Aslan</h2>
-      <!--              <img class="card-badge drop-shadow-crown" src="./assets/icons/moon.png" /> -->
-                    <img class="card-badge drop-shadow-diamond" src="/assets/icons/lightning.png" />
-<!-- <img class="card-badge drop-shadow-bughunter" src="./assets/icons/partner denk ik.png" /> -->
 
+
+            <!-- Badges Section -->
+            <div class="badges">
+                <!-- Example Badges -->
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--icon-park-outline" width="1em" height="1em" viewBox="0 0 48 48" style="color: rgb(255, 255, 255);">
+                            <path fill="currentColor" fill-rule="evenodd" d="m16.871 33.044l-.873 11.66c-.062.82.667 1.383 1.318 1.018c4.613-2.584 19.062-12.074 26.386-32.932c.336-.957-.567-1.82-1.337-1.28c-4.326 3.03-13.78 9.29-19.623 10.484c0 0 3.742-2.6 5.981-6.588a1.2 1.2 0 0 0-.043-1.245L20.513 2.389c-.484-.697-1.478-.408-1.652.481l-2.543 12.937L4.384 26.223c-.598.522-.476 1.577.215 1.856zm21.104-4.596c-.756 1.055-2.384 3.224-3.887 4.55c-.3.265-.26.709.084.925l7.943 4.986c.478.3 1.123-.056 1.043-.576c-.37-2.383-1.434-7.351-4.125-9.959c-.3-.29-.819-.26-1.059.074" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="tooltip">
+                        Popular
+                    </div>
                 </div>
-                <div class="card-bio typewriter">
-                    <p class="text-sm" >big things incoming hehehe</p>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--mage" width="1em" height="1em" viewBox="0 0 24 24" style="color: rgb(255, 255, 255);">
+                            <path fill="currentColor" d="m9.367 19.08l-7.025-9.04h3.836zm5.987-9.04l-3.36 10.946L8.12 10.039zm6.28 0l-7.209 9.272l2.859-9.273zM22 8.206h-4.704l-1.43-5.192h2.652a.4.4 0 0 1 .257.183zm-6.597 0h-7.27l1.833-5.18h3.995zM8.011 3.039l-1.82 5.167H2L5.128 3.32l.097-.11a.5.5 0 0 1 .16-.123a.4.4 0 0 1 .17 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="tooltip">
+                        Premium
+                    </div>
                 </div>
 
-                <div class="card-links">
-                    <a href="https://discord.gg/aslantive" target="_blank">
-                        <img class="card-link drop-shadow-discord" src="./assets/icons/discord.svg" />
-                    </a>
-                    <a href="https://open.spotify.com/user/2goso73l3qxkznyl9m2lziblz?si=78a7cefb6f504cd0" style="display: none;" target="_blank">
-                        <img class="card-link drop-shadow-spotify" src="./assets/icons/spotify.svg" />
-                    </a>
-                    <a href="https://x.com/aslantive" target="_blank">
-                        <img class="card-link drop-shadow-twitter" src="./assets/icons/twitter.svg" />
-                    </a>
-                    <a href="https://github.com/0x036" style="display: none;" target="_blank">
-                        <img class="card-link drop-shadow-github" src="./assets/icons/github.svg" />
-                    </a>
-                    <a href="https://www.instagram.com/aslantive" target="_blank" style="display: none;" target="_blank">
-                        <img class="card-link drop-shadow-instagram" src="./assets/icons/instagram.svg" />
-                    </a>
-                    <a href="https://www.youtube.com/@aslantive" target="_blank">
-                        <img class="card-link drop-shadow-youtube" src="./assets/icons/youtube.svg" />
-                    </a>
-                    <a href="https://www.tiktok.com/@aslantive" target="_blank">
-                        <img class="card-link drop-shadow-tiktok" src="./assets/icons/tiktok2.svg" />
-                    </a>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--game-icons" width="1em" height="1em" viewBox="0 0 512 512" style="color: rgb(255, 255, 255);"><path fill="currentColor" d="M327.027 65.816L229.79 128.23l9.856 5.397l86.51-55.53l146.735 83.116l-84.165 54.023l4.1 2.244v6.848l65.923-42.316l13.836 7.838l-79.76 51.195v11.723l64.633-41.487l15.127 8.57l-79.76 51.195v11.723l64.633-41.487l15.127 8.57l-79.76 51.195v11.723l100.033-64.21l-24.828-14.062l24.827-15.937l-24.828-14.064l24.827-15.937l-23.537-13.333l23.842-15.305zm31.067 44.74c-21.038 10.556-49.06 12.342-68.79 4.383l-38.57 24.757l126.903 69.47l36.582-23.48c-14.41-11.376-13.21-28.35 2.942-41.67zM227.504 147.5l-70.688 46.094l135.61 78.066l1.33-.85c2.5-1.61 6.03-3.89 10.242-6.613c8.42-5.443 19.563-12.66 30.674-19.86c16.002-10.37 24.248-15.72 31.916-20.694zm115.467 1.17a8.583 14.437 82.068 0 1 .003 0a8.583 14.437 82.068 0 1 8.32 1.945a8.583 14.437 82.068 0 1-.87 12.282a8.583 14.437 82.068 0 1-20.273 1.29a8.583 14.437 82.068 0 1 .87-12.28a8.583 14.437 82.068 0 1 11.95-3.237m-218.423 47.115L19.143 263.44l23.537 13.333l-23.842 15.305l24.828 14.063l-24.828 15.938l24.828 14.063l-24.828 15.938l166.135 94.106L285.277 381.8v-11.72l-99.433 63.824L39.11 350.787l14.255-9.15l131.608 74.547L285.277 351.8v-11.72l-99.433 63.824L39.11 320.787l14.255-9.15l131.608 74.547L285.277 321.8v-11.72l-99.433 63.824L39.11 290.787l13.27-8.52l132.9 75.28l99.997-64.188v-5.05l-5.48-3.154l-93.65 60.11l-146.73-83.116l94.76-60.824l-9.63-5.543zm20.46 11.78l-46.92 30.115c14.41 11.374 13.21 28.348-2.942 41.67l59.068 33.46c21.037-10.557 49.057-12.342 68.787-4.384l45.965-29.504l-123.96-71.358zm229.817 32.19c-8.044 5.217-15.138 9.822-30.363 19.688a36222 36222 0 0 1-30.69 19.873c-4.217 2.725-7.755 5.01-10.278 6.632c-.09.06-.127.08-.215.137v85.924l71.547-48.088zm-200.99 17.48a8.583 14.437 82.068 0 1 8.32 1.947a8.583 14.437 82.068 0 1-.87 12.28a8.583 14.437 82.068 0 1-20.27 1.29a8.583 14.437 82.068 0 1 .87-12.28a8.583 14.437 82.068 0 1 11.95-3.236z"></path></svg>
+                    </div>
+                    <div class="tooltip">
+                        Donator
+                    </div>
                 </div>
-       
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--solar" width="1em" height="1em" viewBox="0 0 24 24" style="color: rgb(255, 255, 255);"><path fill="currentColor" fill-rule="evenodd" d="M22 8.293c0 3.476-2.83 6.294-6.32 6.294c-.636 0-2.086-.146-2.791-.732l-.882.878c-.519.517-.379.669-.148.919c.096.105.208.226.295.399c0 0 .735 1.024 0 2.049c-.441.585-1.676 1.404-3.086 0l-.294.292s.881 1.025.147 2.05c-.441.585-1.617 1.17-2.646.146l-1.028 1.024c-.706.703-1.568.293-1.91 0l-.883-.878c-.823-.82-.343-1.708 0-2.05l7.642-7.61s-.735-1.17-.735-2.78c0-3.476 2.83-6.294 6.32-6.294S22 4.818 22 8.293" clip-rule="evenodd" opacity=".5"></path><path fill="currentColor" d="M17.885 8.294a2.2 2.2 0 0 1-2.204 2.195a2.2 2.2 0 0 1-2.204-2.195a2.2 2.2 0 0 1 2.204-2.196a2.2 2.2 0 0 1 2.204 2.196"></path></svg>
+                    </div>
+                    <div class="tooltip">
+                        Early
+                    </div>
+                </div>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--icon-park-outline" width="1em" height="1em" viewBox="0 0 48 48" style="color: rgb(255, 255, 255);"><path fill="currentColor" fill-rule="evenodd" d="m16.871 33.044l-.873 11.66c-.062.82.667 1.383 1.318 1.018c4.613-2.584 19.062-12.074 26.386-32.932c.336-.957-.567-1.82-1.337-1.28c-4.326 3.03-13.78 9.29-19.623 10.484c0 0 3.742-2.6 5.981-6.588a1.2 1.2 0 0 0-.043-1.245L20.513 2.389c-.484-.697-1.478-.408-1.652.481l-2.543 12.937L4.384 26.223c-.598.522-.476 1.577.215 1.856zm21.104-4.596c-.756 1.055-2.384 3.224-3.887 4.55c-.3.265-.26.709.084.925l7.943 4.986c.478.3 1.123-.056 1.043-.576c-.37-2.383-1.434-7.351-4.125-9.959c-.3-.29-.819-.26-1.059.074" clip-rule="evenodd"></path></svg>                    </div>
+                    <div class="tooltip">
+                        Trending
+                    </div>
+                </div>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--fa-brands" width="1em" height="1em" viewBox="0 0 512 512" style="color: rgb(255, 255, 255);"><path fill="currentColor" d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4c2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4s-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10c0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5c-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10c-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5c-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8s9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1s0-17.5 5-22.5"></path></svg>
+                    </div>
+                    <div class="tooltip">
+                        Thanksgiving
+                    </div>
+                </div>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--solar" width="1em" height="1em" viewBox="0 0 24 24" style="color: rgb(255, 255, 255);"><path fill="currentColor" d="M9.592 3.2a6 6 0 0 1-.495.399c-.298.2-.633.338-.985.408c-.153.03-.313.043-.632.068c-.801.064-1.202.096-1.536.214a2.71 2.71 0 0 0-1.655 1.655c-.118.334-.15.735-.214 1.536a6 6 0 0 1-.068.632c-.07.352-.208.687-.408.985c-.087.13-.191.252-.399.495c-.521.612-.782.918-.935 1.238c-.353.74-.353 1.6 0 2.34c.153.32.414.626.935 1.238c.208.243.312.365.399.495c.2.298.338.633.408.985c.03.153.043.313.068.632c.064.801.096 1.202.214 1.536a2.71 2.71 0 0 0 1.655 1.655c.334.118.735.15 1.536.214c.319.025.479.038.632.068c.352.07.687.209.985.408c.13.087.252.191.495.399c.612.521.918.782 1.238.935c.74.353 1.6.353 2.34 0c.32-.153.626-.414 1.238-.935c.243-.208.365-.312.495-.399c.298-.2.633-.338.985-.408c.153-.03.313-.043.632-.068c.801-.064 1.202-.096 1.536-.214a2.71 2.71 0 0 0 1.655-1.655c.118-.334.15-.735.214-1.536c.025-.319.038-.479.068-.632c.07-.352.209-.687.408-.985c.087-.13.191-.252.399-.495c.521-.612.782-.918.935-1.238c.353-.74.353-1.6 0-2.34c-.153-.32-.414-.626-.935-1.238a6 6 0 0 1-.399-.495a2.7 2.7 0 0 1-.408-.985a6 6 0 0 1-.068-.632c-.064-.801-.096-1.202-.214-1.536a2.71 2.71 0 0 0-1.655-1.655c-.334-.118-.735-.15-1.536-.214a6 6 0 0 1-.632-.068a2.7 2.7 0 0 1-.985-.408a6 6 0 0 1-.495-.399c-.612-.521-.918-.782-1.238-.935a2.71 2.71 0 0 0-2.34 0c-.32.153-.626.414-1.238.935" opacity=".5"></path><path fill="currentColor" d="M16.374 9.863a.814.814 0 0 0-1.151-1.151l-4.85 4.85l-1.595-1.595a.814.814 0 0 0-1.151 1.151l2.17 2.17a.814.814 0 0 0 1.15 0z"></path></svg>
+                    </div>
+                    <div class="tooltip">
+                        Verified
+                    </div>
+                </div>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--la" width="1em" height="1em" viewBox="0 0 32 32" style="color: rgb(255, 255, 255);"><path fill="currentColor" d="M18 2a7.96 7.96 0 0 0-5.688 2.375l-.718.719l-.688.718l.719.688l2.844 2.813l.687.718l.719-.719l.688-.718C16.945 8.207 17.453 8 18 8c1.113 0 2 .887 2 2a1.95 1.95 0 0 1-.594 1.406L5.72 25.031L5 25.75l.719.688L8.53 29.28l.72.72l.688-.719l13.718-13.625A7.97 7.97 0 0 0 26 10c0-4.402-3.598-8-8-8m0 2c.805 0 1.582.152 2.281.438l-1.062 1.78c-.367-.116-.754-.21-1.157-.218l-.625-1.969C17.625 4.016 17.81 4 18 4m-2.469.563l.594 1.937c-.348.188-.688.402-.969.688L13.72 5.78c.527-.531 1.152-.922 1.812-1.218zm6.438.937a6 6 0 0 1 1.5 2l-1.938.688a4 4 0 0 0-.593-.876zm2 3.938c.015.183.031.374.031.562c0 .695-.125 1.367-.344 2H21.47c.32-.555.508-1.191.531-1.844zM19.656 14h2.813c-.074.082-.14.172-.219.25L20.5 16h-2.844zm-4.031 4h2.844l-2 2h-2.844zm-4 4h2.813l-2 2H9.594zm-3.531 4h2.312L9.25 27.156z"></path></svg>
+                    </div>
+                    <div class="tooltip">
+                        Christmas
+                    </div>
+                </div>
+                <div class="badge group/tooltip">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-5 w-5 iconify iconify--icon-park-outline" width="1em" height="1em" viewBox="0 0 48 48" style="color: rgb(255, 255, 255);"><path fill="currentColor" fill-rule="evenodd" d="m16.871 33.044l-.873 11.66c-.062.82.667 1.383 1.318 1.018c4.613-2.584 19.062-12.074 26.386-32.932c.336-.957-.567-1.82-1.337-1.28c-4.326 3.03-13.78 9.29-19.623 10.484c0 0 3.742-2.6 5.981-6.588a1.2 1.2 0 0 0-.043-1.245L20.513 2.389c-.484-.697-1.478-.408-1.652.481l-2.543 12.937L4.384 26.223c-.598.522-.476 1.577.215 1.856zm21.104-4.596c-.756 1.055-2.384 3.224-3.887 4.55c-.3.265-.26.709.084.925l7.943 4.986c.478.3 1.123-.056 1.043-.576c-.37-2.383-1.434-7.351-4.125-9.959c-.3-.29-.819-.26-1.059.074" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div class="tooltip">
+                        Famous
+                    </div>
+                </div>
+                <!-- Add more badges as needed -->
             </div>
+
+            <div class="card-bio typewriter">
+                <p class="text-sm">636 2008</p>
+            </div>
+
+            <div class="card-links">
+                <a href="https://discord.gg/aslantive" target="_blank">
+                    <img class="card-link drop-shadow-discord" src="./assets/icons/discord.svg"/>
+                </a>
+                <a href="https://open.spotify.com/user/2goso73l3qxkznyl9m2lziblz?si=78a7cefb6f504cd0"
+                   style="display: none;" target="_blank">
+                    <img class="card-link drop-shadow-spotify" src="./assets/icons/spotify.svg"/>
+                </a>
+                <a href="https://x.com/aslantive" target="_blank">
+                    <img class="card-link drop-shadow-twitter" src="./assets/icons/twitter.svg"/>
+                </a>
+                <a href="https://github.com/0x036" style="display: none;" target="_blank">
+                    <img class="card-link drop-shadow-github" src="./assets/icons/github.svg"/>
+                </a>
+                <a href="https://www.instagram.com/aslantive" target="_blank" style="display: none;" target="_blank">
+                    <img class="card-link drop-shadow-instagram" src="./assets/icons/instagram.svg"/>
+                </a>
+                <a href="https://www.youtube.com/@aslantive" target="_blank">
+                    <img class="card-link drop-shadow-youtube" src="./assets/icons/youtube.svg"/>
+                </a>
+                <a href="https://www.tiktok.com/@aslantive" target="_blank">
+                    <img class="card-link drop-shadow-tiktok" src="./assets/icons/tiktok2.svg"/>
+                </a>
+            </div>
+
         </div>
     </div>
+</div>
 
-    <audio id="audio" loop src="/background.mp3"></audio>
+<audio id="audio" loop src="/background.mp3"></audio>
 
 </body>
 

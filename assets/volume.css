@@ -1,0 +1,30 @@
+.volume svg {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0)
+    );
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+    animation-duration: .3s;
+    transition-duration: .3s;
+    padding: .375rem;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    color: white;
+}
+.volume svg:hover {
+    scale: 1.1;
+    color: darkgrey;
+}
+
+.volume {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

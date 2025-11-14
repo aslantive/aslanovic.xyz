@@ -7,12 +7,12 @@
     padding-top: 5.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: #141417;
+    /*background-color: #141417;*/
     border-radius: 0.5rem;
-    padding-bottom: 2rem;
-    box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;
-    -moz-box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;
-    -webkit-box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;
+    /*padding-bottom: 2rem;*/
+    /*box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;*/
+    /*-moz-box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;*/
+    /*-webkit-box-shadow: 1px 1px 4px 0px rgba(22, 22, 27, 0.75) inset;*/
 }
 
 .card-name {
@@ -24,12 +24,20 @@
     gap: 0.4rem;
 }
 .card-name-title {
+    margin-bottom: 0;
+    margin-top: 0;
+
     background-image: url("/purple.gif");
-    filter: drop-shadow(8px 8px 10px #ffffff);
+    /*filter: drop-shadow(8px 8px 10px #ffffff);*/
     color: #ffffff;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: sans-serif;
+    font-weight: 550;
+    font-family: "Inter", "Inter Fallback";
+    letter-spacing: .05em;
+    font-size: 32px;
+    word-break: break-all;
+    text-wrap: wrap;
+    width: fit-content;
+    text-shadow: rgb(255, 255, 255) 0px 0px 3px, rgb(255, 255, 255) 0px 0px 8px, rgb(255, 255, 255) 0px 0px 12px;
 }
 .card-badge {
     width: 1.0em;
@@ -44,7 +52,7 @@
     width: fit-content;
     display: block;
     margin: auto;
-    margin-top: -0.7rem;
+    margin-top: -0.4rem;
 }
 
 .card-links {
@@ -62,34 +70,64 @@
     justify-content: center;
     gap: 0.7rem;
 
-    border-radius: 10px;
-    box-shadow: 0 0px 30px #0a0a0a;
-    -webkit-box-shadow: 0 0px 30px #0a0a0a; 
-    -moz-box-shadow: 0 0px 30px #0a0a0a;
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 0px 30px #0a0a0a;*/
+    /*-webkit-box-shadow: 0 0px 30px #0a0a0a; */
+    /*-moz-box-shadow: 0 0px 30px #0a0a0a;*/
 
-    backdrop-filter: blur(55px);
+    /*backdrop-filter: blur(55px);*/
 
-    background: #141417;
-
+    /*background: #141417;*/
 }
+
 .card-link {
     width: 2.2rem;
     height: 2.2rem;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), /* Bouncy ease */
+    filter 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.card-link:hover {
+    transform: translateY(-4px) scale(1.1) rotate(5deg); /* Lift, scale, and tilt */
+    filter: drop-shadow(0 0 12px rgba(100, 149, 237, 0.9)); /* Blue glow */
+    opacity: 0.95; /* Slight dim for contrast */
+    animation: pulseGlow 0.6s infinite alternate ease-in-out; /* Pulsing glow */
+}
+
+/* Keyframes for pulsing glow */
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 8px rgba(100, 149, 237, 0.7));
+    }
+    100% {
+        filter: drop-shadow(0 0 16px rgba(100, 149, 237, 1));
+    }
 }
 
 .card {
     min-width: 80%;
 }
 
+.card-avatar img.avatar {
+    /*transform: translateY(1.5rem);*/
+}
+
 .avatar {
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%; /* Gebruik percentage voor een perfecte cirkel */
     margin: 0 auto; /* Kortere notatie voor margin */
     display: block;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8)); /* rgba-waarde iets verkort */
     vertical-align: middle; /* Blijft behouden, maar is alleen nodig voor inline of inline-block elementen */
+
+    box-shadow:
+            0 0 #0000,0 0 #0000,
+            0 0 #000,0 0 #0000,
+            0 4px 6px -1px rgba(0, 0, 0, .1),
+            0 2px 4px -2px rgba(0, 0, 0, .1);
 }
 
 @media only screen and (max-width: 300px) {
